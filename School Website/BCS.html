@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>BCS</title>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+     <link rel="stylesheet" href="style.css">
+
+     <style>
+
+      .naruto{
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+     </style>
+    </head>
+    
+    <body>
+       
+      <div class="wrapper">
+         <div class="section">
+      <div class="top_navbar">
+    
+        <div class="hamburger">
+          <a href="#">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+        <nav>
+          <div>
+              <img src="https://poornima.edu.in/career-counselling/img/logo1.png" class="logo">
+              </div> </nav>
+              <div class="icon" onclick="toggleNotifi()">
+                <img src="icon.png" >
+              </div>
+              <div class="notifi-box" id="box">
+                <h2>Notifications <span>05</span></h2>
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Tutorial Sheet</h4>
+                     <p>You got a new Physics tutorial sheet</p>
+                    </div> 
+                </div>
+          
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Pratish Rawat</h4>
+                     <p>Stay in your classes...</p>
+                    </div> 
+                </div>
+          
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Vishnu Sharma</h4>
+                     <p>Please fill out this form</p>
+                    </div> 
+                </div>
+          
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Shweta Kumawat </h4>
+                     <p>Submit your enrollment form asap</p>
+                    </div> 
+                </div>
+
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Neeraj Tiwari</h4>
+                     <p>Please fill out this Feedback form</p>
+                    </div> 
+                </div>
+          
+            
+          
+              </div>
+
+          </nav>
+        
+      </div>
+      <div class="container">
+
+        <div class="naruto">
+          <iframe width="1300" height="700" frameborder="0" scrolling="no" 
+          src="https://onedrive.live.com/embed?resid=7BFFF5B1A6982451%212047&authkey=%21AE462dg7OaLzBhg&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&resen=false&ed1JS=false">
+          </iframe>
+        </div>
+        
+      </div>
+      <div class="sidebar">
+          <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="profile.html">My Profile</a></li>
+              <li><a href="BCS.html">Batch class schedule</a></li>
+              <li><a href="exam.html">Exam Calender</a></li>
+              <li><a href="batch.html">Batch details</a></li>
+              <li><a href="#">Attendance</a></li>
+              <li><a href="report.html">Performance Report</a></li>
+              <li><a href="Faculty.html">Faculty Details</a></li>
+              <li><a href="Syllabus.html">Syllabus</a></li>
+              <li><a href="About PU.html">About PU</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Logout</a></li>
+          </ul>
+      </div>
+      
+  </div>
+
+      <script>
+          var hamburger = document.querySelector(".hamburger");
+          hamburger.addEventListener("click", function(){
+            document.querySelector("body").classList.toggle("active");
+          })
+      </script>
+      <script src="not.js"></script>
+
+    </body>
+    </html>

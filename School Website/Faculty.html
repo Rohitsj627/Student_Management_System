@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Faculty</title>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+     <link rel="stylesheet" href="style.css">
+
+     <style>
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th, td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #0c7db1;
+        color: white;
+      }
+
+      .contain {
+        margin: 50px auto;
+        max-width: 800px;
+      }
+
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+     </style>
+    </head>
+    
+    <body>
+       
+      <div class="wrapper">
+         <div class="section">
+      <div class="top_navbar">
+    
+        <div class="hamburger">
+          <a href="#">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+          <nav>
+      
+              <img src="https://poornima.edu.in/career-counselling/img/logo1.png" class="logo">
+              
+          </nav>
+        
+      </div>
+      <div class="container">
+
+        <div class="contain">
+          <h1>Faculty Details</h1> <br><br><br>
+          <table id="faculty-table">
+            <thead>
+              <tr>
+                <th>Profile Picture</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Phone no.</th>
+                <th>Email</th>
+                <th>Room no.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img class="profile-pic" src="321244471_9239293692755215_8323640150658330013_n.jpg" alt="John Doe's profile picture"></td>
+                <td>Mr. Pratish Rawat</td>
+                <td>Computer Science</td>
+                <td>+91 987654321</td>
+                <td>abc@gamil.com</td>
+                <td>146</td>
+              </tr>
+              <tr>
+                <td><img class="profile-pic" src="319926172_1573490726413679_8834872579672482885_n.jpg" alt="Jane Smith's profile picture"></td>
+                <td>Ms. Anuradha Raheja</td>
+                <td>Computer Science</td>
+                <td>+91 987654321</td>
+                <td>abc@gmail.com</td>
+                <td>030</td>
+              </tr>
+              <tr>
+                <td><img class="profile-pic" src="321244471_9239293692755215_8323640150658330013_n.jpg" alt="John Doe's profile picture"></td>
+                <td>Mr. Pratish Rawat</td>
+                <td>Computer Science</td>
+                <td>+91 987654321</td>
+                <td>abc@gamil.com</td>
+                <td>146</td>
+              </tr>
+              <tr>
+                <td><img class="profile-pic" src="319926172_1573490726413679_8834872579672482885_n.jpg" alt="Jane Smith's profile picture"></td>
+                <td>Ms. Anuradha Raheja</td>
+                <td>Computer Science</td>
+                <td>+91 987654321</td>
+                <td>abc@gmail.com</td>
+                <td>030</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        
+
+        
+      </div>
+      <div class="sidebar">
+          <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="profile.html">My Profile</a></li>
+              <li><a href="BCS.html">Batch class schedule</a></li>
+              <li><a href="exam.html">Exam Calender</a></li>
+              <li><a href="batch.html">Batch details</a></li>
+              <li><a href="#">Attendance</a></li>
+              <li><a href="report.html">Performance Report</a></li>
+              <li><a href="Faculty.html">Faculty Details</a></li>
+              <li><a href="Syllabus.html">Syllabus</a></li>
+              <li><a href="About PU.html">About PU</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Logout</a></li>
+          </ul>
+      </div>
+      
+  </div>
+
+      <script>
+          var hamburger = document.querySelector(".hamburger");
+          hamburger.addEventListener("click", function(){
+            document.querySelector("body").classList.toggle("active");
+          })
+      </script>
+      <script src="not.js"></script>
+
+    </body>
+    </html>

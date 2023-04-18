@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Home</title>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+     <link rel="stylesheet" href="style.css">
+
+     <style>
+
+      .hero {
+        width: 100%;
+        height: 10vh;
+        background-image: linear-gradient(aquamarine);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .selector {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    #selectfield{
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    background: rgb(226, 245, 255);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    }
+    
+    #selectfield img{
+        width: 12px;
+        margin-left: 180px;
+        transition: transform 0.5s;
+    }
+    
+    #selectText {
+        font-size: small;
+    }
+    
+    #list {
+        width: 100%;
+        background: rgba(255,255,255,0.7);
+        border-radius: 6px;
+        overflow: hidden;
+        text-decoration: none;
+        font-size: small ;
+        
+         }
+    
+        #list li{
+            color: rgb(0, 0, 0);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+           list-style: none;
+        }
+    
+        #list li a{
+            color: rgb(0, 0, 0);
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+        }
+        
+       
+        
+    
+    
+    li a:hover {
+        background-color: rgb(103, 183, 223);
+        
+    }
+    
+    .options:hover{
+        background: rgb(103, 183, 223);
+        }
+    
+    .hide{
+        visibility: hidden;
+        }
+    
+    .rotate {
+        transform: rotate(180deg);
+    }
+    
+    
+    .options{
+        width: 100%;
+        padding: 0px;
+        list-style: none;
+        cursor: pointer;
+        box-sizing: border-box;
+        position: relative;
+        }
+
+     </style>
+    </head>
+    
+    <body>
+       
+      <div class="wrapper">
+         <div class="section">
+      <div class="top_navbar">
+    
+        <div class="hamburger">
+          <a href="#">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+          <nav>
+      
+              <img src="https://poornima.edu.in/career-counselling/img/logo1.png" class="logo">
+              
+          </nav>
+        
+      </div>
+      <div class="container" style="height: 620px;">
+
+        <div class="hero">
+          <div class="selector">
+            <div id="selectfield">
+              <p id="selectText">Select any subject
+               <img src="131101-down-images-arrow-free-clipart-hq.png" id="arrowIcon" >
+              </p>
+            </div>
+            <ul id="list" class="hide" >
+             <li class="options"><a href="EVS.html">Environmental Studies</a></li>
+             <li class="options"><a href="#">Engineering Mathematics</a></li>
+             <li class="options"><a href="#">Engineering Physics</a></li>
+             <li class="options"><a href="#">Electrical & Electronics Engineering</a></li>
+             <li class="options"><a href="#">Engineering Mechanics</a></li>
+             <li class="options"><a href="#">Programming in C</a></li>
+             <li class="options"><a href="#">Introduction to Futuristic Technologies</a></li>
+             <li class="options"><a href="#">Fundamentals of Computing</a></li>
+     
+            </ul>
+          </div>
+
+          
+     
+       </div>
+     
+      
+      
+        
+      </div>
+      <div class="sidebar">
+          <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="profile.html">My Profile</a></li>
+              <li><a href="BCS.html">Batch class schedule</a></li>
+              <li><a href="exam.html">Exam Calender</a></li>
+              <li><a href="batch.html">Batch details</a></li>
+              <li><a href="#">Attendance</a></li>
+              <li><a href="report.html">Performance Report</a></li>
+              <li><a href="Faculty.html">Faculty Details</a></li>
+              <li><a href="Syllabus.html">Syllabus</a></li>
+              <li><a href="About PU.html">About PU</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Logout</a></li>
+          </ul>
+      </div>
+      
+  </div>
+
+  <script>
+    var selectfield = document.getElementById("selectfield");
+    var selectText = document.getElementById("selectText");
+    var options = document.getElementsByClassName("options");
+    var list = document.getElementById("list");
+    var arrowIcon = document.getElementById("arrowIcon");
+
+    selectfield.onclick = function(){
+    list.classList.toggle("hide");
+    arrowIcon.classList.toggle("rotate");
+    }
+
+
+    for(option of options){
+        option.onclick = function(){
+            selectText.innerHTML = this.textContent;
+            list.classList.toggle("hide");
+            arrowIcon.classList.toggle("rotate");
+    }
+    }
+  </script>
+
+      <script>
+          var hamburger = document.querySelector(".hamburger");
+          hamburger.addEventListener("click", function(){
+            document.querySelector("body").classList.toggle("active");
+          })
+      </script>
+      <script src="not.js"></script>
+
+    </body>
+    </html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Report</title>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+     <link rel="stylesheet" href="style.css">
+
+     <style>
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+		}
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+		th {
+			background-color: #f2f2f2;
+		}
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+        .goku{
+            margin-left: auto;
+        margin-right: auto;
+        }
+
+     </style>
+    </head>
+    
+    <body>
+       
+      <div class="wrapper">
+         <div class="section">
+      <div class="top_navbar">
+    
+        <div class="hamburger">
+          <a href="#">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+        <nav>
+          <div>
+              <img src="https://poornima.edu.in/career-counselling/img/logo1.png" class="logo">
+              </div> </nav>
+              <div class="icon" onclick="toggleNotifi()">
+                <img src="icon.png" >
+              </div>
+              <div class="notifi-box" id="box">
+                <h2>Notifications <span>05</span></h2>
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Tutorial Sheet</h4>
+                     <p>You got a new Physics tutorial sheet</p>
+                    </div> 
+                </div>
+          
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Pratish Rawat</h4>
+                     <p>Stay in your classes...</p>
+                    </div> 
+                </div>
+          
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Vishnu Sharma</h4>
+                     <p>Please fill out this form</p>
+                    </div> 
+                </div>
+          
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Shweta Kumawat </h4>
+                     <p>Submit your enrollment form asap</p>
+                    </div> 
+                </div>
+
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Neeraj Tiwari</h4>
+                     <p>Please fill out this Feedback form</p>
+                    </div> 
+                </div>
+          
+            
+          
+              </div>
+
+          </nav>
+        
+      </div>
+      <div class="container">
+
+        <div class="goku">
+
+          <br><br>
+              <p style="text-align: center;"><b>CIE-I</b></p> <br><br>
+              <table>
+              <tr>
+                <th>Subject</th>
+                <th>Total Marks</th>
+                <th>Your Marks</th>
+              </tr>
+              <tr>
+                <td>Engineering Mechanics</td>
+                <td>60</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Engineering Physics</td>
+                <td>60</td>
+                <td>55</td>
+              </tr>
+              <tr>
+                <td>Engineering Chemistry</td>
+                <td>60</td>
+                <td>45</td>
+              </tr>
+              <tr>
+                <td>Introduction to Futuristic Technologies </td>
+                <td>60</td>
+                <td>55</td>
+              </tr>
+            </table>
+             </div>
+        
+      </div>
+      <div class="sidebar">
+          <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="profile.html">My Profile</a></li>
+              <li><a href="BCS.html">Batch class schedule</a></li>
+              <li><a href="exam.html">Exam Calender</a></li>
+              <li><a href="batch.html">Batch details</a></li>
+              <li><a href="#">Attendance</a></li>
+              <li><a href="report.html">Performance Report</a></li>
+              <li><a href="Faculty.html">Faculty Details</a></li>
+              <li><a href="Syllabus.html">Syllabus</a></li>
+              <li><a href="About PU.html">About PU</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Logout</a></li>
+          </ul>
+      </div>
+      
+  </div>
+
+      <script>
+          var hamburger = document.querySelector(".hamburger");
+          hamburger.addEventListener("click", function(){
+            document.querySelector("body").classList.toggle("active");
+          })
+      </script>
+      <script src="not.js"></script>
+    </body>
+    </html>

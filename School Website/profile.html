@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Profile</title>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+     <link rel="stylesheet" href="style.css">
+
+     <style>
+
+      .card {
+        width: 250px;
+        height: 300px;
+        background: #f0f0f0;
+        border-radius: 10px;
+        text-align: center;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+       }
+       
+       .card:hover {
+        -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+                box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+        background-color: #4bb8ff;
+       }
+       
+       .card .blob {
+        height: 10px;
+        width: 75%;
+        border-radius: 0 0 30px 30px;
+        margin: 0 auto;
+        background-color: #4bb8ff;
+        visibility: visible;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+       }
+       
+       .card:hover .blob {
+        height: 0;
+       }
+       
+       .card .img {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 30px auto 10px auto;
+        width: 120px;
+        height: 120px;
+        background-color: #4bb8ff;
+        border-radius: 50%;
+        font-size: 11px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+       }
+       
+       .card:hover .img {
+        width: 100%;
+        height: 70%;
+        border-radius: 10px 0 0;
+        margin: 0 auto;
+        background-color: #f0f0f0;
+        z-index: 99999;
+       }
+       
+       .card h2 {
+        padding: 15px 10px;
+        font-size: 25px;
+        -webkit-transition: all 0.1s;
+        transition: all 0.1s;
+        z-index: -99;
+        line-height: 17px;
+       }
+       
+       .card span {
+        font-size: 18px;
+       }
+       
+       .card:hover h2 {
+        opacity: 0;
+        width: 100%;
+        position: absolute;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+       }
+       
+       .card>p {
+        opacity: 0;
+        -webkit-transition: all 0.75s;
+        transition: all 0.75s;
+       }
+       
+       .card>p>svg {
+        padding: 5px;
+       }
+       
+       .card:hover>p {
+        position: absolute;
+        bottom: 15px;
+        left: 35px;
+        opacity: 1;
+        -webkit-transition: all 0.1s;
+        transition: all 0.1s;
+       }
+      h1 {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 24px;
+      }
+      p {
+        text-align: center;
+        font-size: 18px;
+      }
+
+      .info {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .label {
+        font-size: 16px;
+        color: #000000;
+        font-weight: bold;
+      }
+      .value {
+        font-size: 16px;
+      }
+
+     </style>
+    </head>
+    
+    <body>
+       
+      <div class="wrapper">
+         <div class="section">
+      <div class="top_navbar">
+    
+        <div class="hamburger">
+          <a href="#">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+        <nav>
+          <div>
+              <img src="https://poornima.edu.in/career-counselling/img/logo1.png" class="logo">
+              </div> </nav>
+              <div class="icon" onclick="toggleNotifi()">
+                <img src="icon.png" >
+              </div>
+              <div class="notifi-box" id="box">
+                <h2>Notifications <span>05</span></h2>
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Tutorial Sheet</h4>
+                     <p>You got a new Physics tutorial sheet</p>
+                    </div> 
+                </div>
+          
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Pratish Rawat</h4>
+                     <p>Stay in your classes...</p>
+                    </div> 
+                </div>
+          
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Vishnu Sharma</h4>
+                     <p>Please fill out this form</p>
+                    </div> 
+                </div>
+          
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Shweta Kumawat </h4>
+                     <p>Submit your enrollment form asap</p>
+                    </div> 
+                </div>
+
+                <div class="notifi-item">
+                  <div class="text">
+                     <h4>Neeraj Tiwari</h4>
+                     <p>Please fill out this Feedback form</p>
+                    </div> 
+                </div>
+          
+            
+          
+              </div>
+
+          </nav>
+        
+      </div>
+      <div class="container">
+
+        <div class="card">
+          <div class="blob"></div>
+            <span class="img"></span>
+
+             <br><br>
+             <h3>Rohit Singh Jatav</h3>
+           
+            </div>
+            <br><br>
+
+            <div>
+              <div class="info">
+                <div class="label">Name:</div>
+                <div class="value">Rohit Singh Jatav</div>
+              </div>
+              <div class="info">
+                <div class="label">Student ID:</div>
+                <div class="value">2022PUFCEBCEX12473</div>
+              </div>
+               <div class="info">
+                 <div class="label">Email:</div>
+                 <div class="value">2022csrohit12473.poornima.edu.in</div>
+               </div>
+               <div class="info">
+                 <div class="label">Phone:</div>
+                 <div class="value">987654321</div>
+               </div>
+               <div class="info">
+                 <div class="label">Course:</div>
+                 <div class="value">Btech</div>
+               </div>
+               <div class="info">
+                 <div class="label">Batch:</div>
+                <div class="value">B-2</div>
+               </div>
+
+            </div>
+     </div>
+        
+      </div>
+      <div class="sidebar">
+          <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="profile.html">My Profile</a></li>
+              <li><a href="BCS.html">Batch class schedule</a></li>
+              <li><a href="exam.html">Exam Calender</a></li>
+              <li><a href="batch.html">Batch details</a></li>
+              <li><a href="#">Attendance</a></li>
+              <li><a href="report.html">Performance Report</a></li>
+              <li><a href="Faculty.html">Faculty Details</a></li>
+              <li><a href="Syllabus.html">Syllabus</a></li>
+              <li><a href="About PU.html">About PU</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Logout</a></li>
+          </ul>
+      </div>
+      
+  </div>
+
+      <script>
+          var hamburger = document.querySelector(".hamburger");
+          hamburger.addEventListener("click", function(){
+            document.querySelector("body").classList.toggle("active");
+          })
+      </script>
+      <script src="not.js"></script>
+
+    </body>
+    </html>
